@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: Pantomime Horse Obstacle Course
-date: 2014-07-18
+modal-id: 1
+date: 2025-07-18
 img: PHOC_SQ.png
 alt: image-alt
 project-date: April 2014
