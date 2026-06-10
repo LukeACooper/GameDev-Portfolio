@@ -23,13 +23,13 @@
             <div class="embed-responsive embed-responsive-19by9" style="margin-bottom: 20px;">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed.{{post.youtube_id}}" allowfullscreen></iframe>
             </div>
-            {& endif &}
+            {% endif %}
 
-            {& if post.accordions %}
+            {% if post.accordions %}
 
             <div class="accordion-{{ post.modal-id}}" style="margin-bottom: 20px; text-align: left;">
 
-              {& for item in post.accordions &}
+              {% for item in post.accordions %}
               <div class="card">
                 <div class="card-header" id="heading-{{post.modal-id}}-{{ forloop.index }}">
                   <h5 class="mb-0">
@@ -48,7 +48,7 @@
 
               {% endfor %}
             </div>
-            {& endif &}
+            {% endif %}
 
             <ul class="list-inline item-details">
               {% if post.client %}
@@ -75,4 +75,4 @@
     </div>
   </div>
 </div>
-{& endfor &}
+{% endfor %}
