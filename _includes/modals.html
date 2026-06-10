@@ -19,35 +19,33 @@
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
-            {% if post.youtube.id %}
+            {% if post.youtube-id %}
             <div class="embed-responsive embed-responsive-19by9" style="margin-bottom: 20px;">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed.{{post.youtube_id}}" allowfullscreen></iframe>
             </div>
             {% endif %}
 
             {% if post.accordions %}
-
-            <div class="accordion-{{ post.modal-id}}" style="margin-bottom: 20px; text-align: left;">
-
-              {% for item in post.accordions %}
-              <div class="card">
-                <div class="card-header" id="heading-{{post.modal-id}}-{{ forloop.index }}">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="collapse-{{ post.modal-id }}-{{ forloop.index }}">
-                      {{ item.title }}
-                    </button>
-                  </h5>
-                </div>
+              <div class="panel-group" id="accordion-{{ post.modal-id }}" style="margin-bottom: 20px; text-align: left;">
                 
-                <div id="collapse-{{ post.modal-id }}-{{ forloop.index }}" class="collapse" data-parent="accordion-{{ post.modal-id}}">
-                  <div class="card-body">
-                    {{ item.content }}
+                {% for item in post.accordions %}
+                  <div class="panel panel-default">
+                    <div class="panel-heading" id="heading-{{ post.modal-id }}-{{ forloop.index }}">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion-{{ post.modal-id }}" href="#collapse-{{ post.modal-id }}-{{ forloop.index }}">
+                          {{ item.title }}
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse-{{ post.modal-id }}-{{ forloop.index }}" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        {{ item.content }}
+                      </div>
+                    </div>
                   </div>
-                </div>
+                {% endfor %}
+                
               </div>
-
-              {% endfor %}
-            </div>
             {% endif %}
 
             <ul class="list-inline item-details">
