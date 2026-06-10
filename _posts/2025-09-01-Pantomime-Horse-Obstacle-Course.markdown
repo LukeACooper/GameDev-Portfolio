@@ -11,6 +11,7 @@ youtube_id: sTJ_8hYbnhg
 accordions:
   - title: "3D Modelling"
     content: "Designed and modelled the player character meshes; a pantomime horse character costume, worn by two people. This included a constant open communication with the team regarding design choices, physical constraints, and general gameplay feel. The character was made as 3 individual parts, as well as a full-body version for posing."
+    image: "phoc_mesh.gif"
   - title: "Niagara Systems"
     content: "Created Niagara Particle Systems for victory fireworks, which can be individually customised to inheret the shape of any skeletal mesh, and a system for the wind VFX on the 'fan' obstacle."
   - title: "Blueprint System"

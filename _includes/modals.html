@@ -40,6 +40,11 @@
                     <div id="collapse-{{ post.modal-id }}-{{ forloop.index }}" class="panel-collapse collapse">
                       <div class="panel-body">
                         {{ item.content }}
+                        <div class="panel-body">
+                          {% if item.image &}
+                            <img src="img/portfolio/{{ item.image }}" class="img-responsive" style="margin-bottom: 15px; border-radius: 4px" alt="{{ item.title }}" visual>
+                            {% endif %}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -60,7 +65,7 @@
               </li>
               {% endif %}
               {% if post.category %}
-              <li>Service:
+              <li>Skills:
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}
