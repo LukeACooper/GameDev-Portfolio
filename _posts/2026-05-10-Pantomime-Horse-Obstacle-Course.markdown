@@ -1,7 +1,6 @@
 ---
 layout: default
 modal-id: 1
-title: Pantomime Horse Obstacle COursew
 img: PHOC_SQ.png
 alt: image-alt
 project-date: 2025/26
