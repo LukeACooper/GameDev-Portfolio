@@ -6,7 +6,7 @@ alt: image-alt
 project-date: 2025/26
 team: Horseplay Interactive - Final Year University Project
 category: 3D Modelling, VFX, Level Design, Small Indie Commercial Studio
-description: Pantomime Horse Obstacle Course is a 3D platformer game, where up to two players control the front and back of a pantomime horse, using intense collaboration to complete a variety of obstacle courses. It was created during the final year of university module 'Commercial Games Development' as a team of ten students. A majority of the team, including myself have continued to work on the project, currently in the final stages of launching on Steam.  Also designed the environment for the final milestone posters used in marketing content. Future and ongoing work consists of adding future levels, and refining original meshes to make them more unique to the project, following Steam launch.
+description: Created during the final year of university module 'Commercial Games Development' as a team of ten students. My team and I created a third-person platformer titled: Pantomime Horse Obstacle Course, a chaotic, slapstick interperetation of a pantomime horse costume, worn by two characters, each controlled by individual players, who must complete 'obstacle courses' to reach the finish line. This module required our team to create a game throughout the duration of our final year. Alongside the assignment specifications, our team went beyond the requirements, and have been working towards our full launch on Steam, and continue to release further content in the future. It is expected to launch early June 2026, and is available to Wishlist now! Click the link at the bottom of this post to visit the Steam page.
 youtube_id: sTJ_8hYbnhg
 accordions:
   - title: "3D Modelling"
